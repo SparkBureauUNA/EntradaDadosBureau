@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.pointer {
+    cursor: pointer !important;
+}
+
+.breadcrumb{
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+}
+
+.cursor-default{
+    cursor: default;
+}
+
+.color-red{
+    color: red !important;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 10px;
+}
