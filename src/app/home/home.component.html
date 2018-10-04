@@ -25,7 +25,8 @@
 
 
       <!-- Modal Deletar info comum-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -47,7 +48,8 @@
       </div>
 
       <!-- Modal Deletar info anexada-->
-      <div class="modal fade" id="deletarInfoAnexadaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="deletarInfoAnexadaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -88,8 +90,8 @@
             <div class="card mb-12 box-shadow">
               <!--<img class="card-img-top" src="{{result.sprites.front_default}}" alt="Card image cap">-->
               <div class="card-body" *ngIf="item.tipo == 'Texto'" style="min-height: 430px;">
-                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal" data-target="#exampleModal"
-                  style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
+                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal"
+                  data-target="#exampleModal" style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
                   <span aria-hidden="true">&times;</span>
                 </button>
 
@@ -103,8 +105,8 @@
 
             <div class="card mb-12 box-shadow">
               <div class="card-body" style="min-height: 430px;">
-                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal" data-target="#deletarInfoAnexadaModal"
-                  style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
+                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal"
+                  data-target="#deletarInfoAnexadaModal" style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <img class="card-img-top" src="{{item.url}}" alt="{{item.nome}}">
@@ -116,8 +118,8 @@
           <div class="col-md-4" *ngIf="item.tipo == 'application/pdf'">
             <div class="card mb-12 box-shadow">
               <div class="card-body" style="min-height: 430px;">
-                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal" data-target="#deletarInfoAnexadaModal"
-                  style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
+                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal"
+                  data-target="#deletarInfoAnexadaModal" style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <a href="{{item.url}}">
@@ -131,8 +133,8 @@
           <div class="col-md-4" *ngIf="item.tipo == 'Video'">
             <div class="card mb-12 box-shadow">
               <div class="card-body" style="min-height: 430px;">
-                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal" data-target="#exampleModal"
-                  style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
+                <button type="button" (click)="selecionar(item)" class="close" aria-label="Close" data-toggle="modal"
+                  data-target="#exampleModal" style="padding-bottom: 10px;position: absolute;top: -5px;right: 0px;cursor:pointer;">
                   <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="card-text">{{item.titulo}}</h4>
@@ -190,26 +192,26 @@
 
         <div class="row col-sm-12 form-group" style="padding-top:150px">
           <div class="col-sm-12 col-md-3 col-lg-3">
-            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample1, .show" type="button"
-              aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir novo item</button>
+            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample1, .show"
+              type="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir novo item</button>
           </div>
           <div class="col-sm-12 col-md-3 col-lg-3">
-            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample2, .show" type="button"
-              aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Informações</button>
+            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample2, .show"
+              type="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Informações</button>
           </div>
           <div class="col-sm-12 col-md-3 col-lg-3">
-            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample3, .show" type="button"
-              aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Arquivos</button>
+            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample3, .show"
+              type="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Arquivos</button>
           </div>
           <div class="col-sm-12 col-md-3 col-lg-3">
-            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample4, .show" type="button"
-              aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Videos</button>
+            <button class="btn btn-primary col-sm-12 pointer" data-toggle="collapse" data-target="#multiCollapseExample4, .show"
+              type="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir Videos</button>
           </div>
         </div>
 
         <div class="row col-sm-12 form-group">
-          <button class="btn btn-danger col-sm-12 pointer" data-toggle="collapse" data-target="#addProblema, .show" type="button" aria-expanded="false"
-            aria-controls="multiCollapseExample1"> Inserir novo PROBLEMA</button>
+          <button class="btn btn-danger col-sm-12 pointer" data-toggle="collapse" data-target="#addProblema, .show"
+            type="button" aria-expanded="false" aria-controls="multiCollapseExample1"> Inserir novo PROBLEMA</button>
         </div>
 
         <!-- <div class="row col-sm-12 form-group">
@@ -222,10 +224,10 @@
           <div class="col-sm-12">
             <div class="collapse multi-collapse" id="multiCollapseExample1" data-parent="#accordion">
               <div class="card card-body">
-                <!-- <div class="form-group form-check col-sm-12">
-                    <input type="checkbox" class="form-check-input" [(ngModel)]="chcFinal">
-                    <label class="form-check-label" for="exampleCheck1">Final</label>
-                  </div> -->
+                <div class="form-group form-check col-sm-12">
+                  <input type="checkbox" class="form-check-input" [(ngModel)]="chcFinal">
+                  <label class="form-check-label" for="exampleCheck1">Final</label>
+                </div>
                 <div class="col-sm-12" style="padding-top: 20px">
                   <input type="text" class="form-control col-sm-12" [(ngModel)]="txtDado" placeholder="Nome" aria-label="Pokemon">
                 </div>
@@ -239,7 +241,9 @@
             </div>
           </div>
 
-          <div class="col-sm-12">
+
+
+          <!-- <div class="col-sm-12">
             <div class="collapse multi-collapse" id="addSolucao" data-parent="#accordion">
               <div class="card card-body">
 
@@ -255,7 +259,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
 
 
@@ -265,7 +269,8 @@
 
                 <div class="col-sm-12" style="padding-top: 20px">
                   <p>Descrição do problema</p>
-                  <input type="text" class="form-control col-sm-12" [(ngModel)]="txtProblema" placeholder="Problema" aria-label="Pokemon">
+                  <input type="text" class="form-control col-sm-12" [(ngModel)]="txtProblema" placeholder="Problema"
+                    aria-label="Pokemon">
                 </div>
 
                 <div class="col-sm-12" style="padding-top: 20px">
@@ -304,8 +309,8 @@
 
 
                 <div class="progress col-sm-12">
-                  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}"
-                    aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
+                  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                    attr.aria-valuenow="{{progress.percentage}}" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
                     {{progress.percentage}}%</div>
                 </div>
 
@@ -339,127 +344,10 @@
 
 
 
-
-
-
         </div>
 
       </div>
 
-      <!-- VELHO -->
-
-      <!-- <div class="accordion" id="accordion" style="padding-top:150px">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Inserir novo item
-              </button>
-            </h5>
-          </div>
-
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <div class="form-group form-check col-sm-12">
-                <input type="checkbox" class="form-check-input" [(ngModel)]="chcFinal">
-                <label class="form-check-label" for="exampleCheck1">Final</label>
-              </div>
-              <div class="col-sm-12" style="padding-top: 20px">
-                <input type="text" class="form-control col-sm-12" [(ngModel)]="txtDado" placeholder="Nome" aria-label="Pokemon">
-              </div>
-
-              <div class="col-sm-12" style="padding-top: 20px">
-                <button type="button" class="btn btn-primary col-sm-12" (click)="addCourse()">
-                  Adicionar
-                </button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                aria-controls="collapseTwo">
-                Inserir Informações
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-
-              <div class="form-group col-sm-12">
-                <label for="exampleFormControlTextarea1">Informação</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="txtInfo"></textarea>
-              </div>
-
-
-              <div class="col-sm-12" style="padding-top: 20px">
-                <button type="button" class="btn btn-primary col-sm-12" (click)="addInfoText()">
-                  Adicionar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                aria-controls="collapseFour">
-                Inserir Arquivos (Imagens, documentos, etc)
-              </button>
-            </h5>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-            <div class="card-body">
-              <div class="form-group col-sm-12">
-                <input type="file" class="form-control-file" (change)="selectFile($event)">
-              </div>
-
-
-              <div class="progress" style="width:400px">
-                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" attr.aria-valuenow="{{progress.percentage}}"
-                  aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width:progress.percentage+'%'}">
-                  {{progress.percentage}}%</div>
-              </div>
-
-              <div class="col-sm-12" style="padding-top: 20px">
-                <button type="button" class="btn btn-primary col-sm-12" (click)="upload()">
-                  Adicionar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
-                Inserir Videos
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              <div class="col-sm-12" style="padding-top: 20px">
-                <input type="text" class="form-control col-sm-12" [(ngModel)]="txtTitulo" placeholder="Titulo">
-              </div>
-              <div class="col-sm-12" style="padding-top: 20px">
-                <input type="text" class="form-control col-sm-12" [(ngModel)]="txtLink" placeholder="Link">
-              </div>
-
-              <div class="col-sm-12" style="padding-top: 20px">
-                <button type="button" class="btn btn-primary col-sm-12" (click)="addInfoVideo()">
-                  Adicionar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
     </div>
 
